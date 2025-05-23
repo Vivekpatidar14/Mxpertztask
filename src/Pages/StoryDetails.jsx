@@ -29,7 +29,7 @@ const StoryDetails = () => {
   }, [id]);
 
   return (
-    <div className="bg-gradient-to-b from-blue-900 to-black min-h-screen p-10 text-white font-sans">
+    <div className=" min-h-screen p-10 text-white font-sans">
       {/* Header */}
       <div className="text-center text-4xl font-extrabold mt-6">
         <span className="text-purple-400">The Lost </span>
@@ -76,10 +76,10 @@ const StoryDetails = () => {
                 alt={data.Wordexplore[0].Noun}
                 className="mt-4 w-full h-60 object-cover rounded-lg"
               />
-              <p className="text-blue-400 font-bold mt-2">
+              <p className="text-blue-400 font-bold text-[1vw] mt-2 font-sans">
                 Synonyms: {data.Wordexplore[0].Synonyms}
               </p>
-              <p className="text-red-400 font-bold">
+              <p className="text-red-400 font-bold text-[1vw] font-sans">
                 Antonyms: {data.Wordexplore[0].Antonyms}
               </p>
             </div>
@@ -91,7 +91,7 @@ const StoryDetails = () => {
                     alt={item.Noun}
                     className="w-full h-80 object-cover rounded-lg"
                   />
-                  <p className="mt-3 text-gray-300 text-md font-sans">
+                  <p className="mt-3 text-gray-300 text-[1vw] text-center font-medium  font-sans">
                     {item.Storyttext}
                   </p>
                 </div>
